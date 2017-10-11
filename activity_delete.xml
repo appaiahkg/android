@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C5CD"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:text="USER DELETION"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:textColor="#00C5CD"
+        android:layout_marginBottom="15dip"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="SELECT USER:"/>
+    <Spinner
+        android:id="@+id/spinnerList"
+        android:layout_width="match_parent"
+        android:background="#00C5CD"
+        android:layout_margin="5dip"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDeleteUser"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="#f44336"
+            android:textColor="#ffffff"
+            android:text="DELETE USER" />
+    </LinearLayout>
+
+</LinearLayout>

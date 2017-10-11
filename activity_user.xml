@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00C5CD"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:text="USER MANAGEMENT"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:textColor="#00C5CD"
+        android:layout_marginBottom="100dip"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:layout_height="100dip"
+            android:background="#009688"
+            android:id="@+id/btnAdd"
+            android:textSize="30sp"
+            android:layout_margin="5dip"
+            android:textColor="#ffffff"
+            android:text="ADD USER"/>
+        <Button
+            android:layout_width="0dip"
+            android:layout_weight="0.5"
+            android:layout_height="100dip"
+            android:id="@+id/btnEdit"
+            android:background="#2196F3"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:layout_margin="5dip"
+            android:text="EDIT USER" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:id="@+id/btnDelete"
+        android:background="#f44336"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_margin="5dip"
+        android:text="DELETE USER" />
+</LinearLayout>
+

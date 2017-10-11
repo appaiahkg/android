@@ -1,0 +1,45 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:id="@+id/frameLayoutFragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Spinner
+        android:id="@+id/spinnerList"
+        android:layout_width="match_parent"
+        android:background="#00C5CD"
+        android:layout_height="wrap_content">
+    </Spinner>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRefresh"
+        android:alpha="0.4"
+        android:textColor="#F50057"
+        android:background="#00C5CD"
+        android:text="FORCE REFRESH"/>
+</LinearLayout>
+</FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/add"
+        app:layout_anchor="@id/frameLayoutFragmentContainer"
+        app:layout_anchorGravity="bottom|right|end"/>
+</android.support.design.widget.CoordinatorLayout>
+
+

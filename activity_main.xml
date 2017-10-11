@@ -1,92 +1,32 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#dfe3ee"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="200dip"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-    <TextView
+    android:layout_marginTop="100dip"
+    android:id="@+id/userLayout">
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME">
+    </TextView>
+    <EditText
+        android:text=""
+        android:id="@+id/userName"
         android:layout_width="match_parent"
-        android:layout_height="40dip"
-        android:textColor="#ffffff"
-        android:gravity="center"
-        android:text="Insta Broadcast"
-        android:textSize="20sp"
-        android:background="#0f4d86"/>
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+  <Button android:id="@+id/btnTrackMe"
+      android:layout_below="@+id/userLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAlignment="center"
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:background="#39B7CD"
-            android:layout_margin="5dip"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <TextView android:text="@string/txtSms"
-                android:id="@+id/txtSms"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#ffffff"
-                android:textSize="40sp"
-                android:gravity="center"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:background="#50A6C2"
-            android:layout_margin="5dip"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <TextView android:text="@string/txtEmail"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#ffffff"
-                android:id="@+id/txtEmail"
-                android:textSize="40sp"
-                android:gravity="center"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:background="#009ACD"
-            android:layout_margin="5dip"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <TextView android:text="@string/txtOnlineSms"
-                android:id="@+id/txtOnlineSms"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="40sp"
-                android:textColor="#ffffff"
-                android:gravity="center"/>
-        </LinearLayout>
-       <!-- <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <TextView android:text="@string/txtEmail"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="40sp"
-                android:gravity="center"/>
-        </LinearLayout>-->
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:orientation="horizontal">
-        </LinearLayout>
+      android:text="START SURVEY">
+  </Button>
 
-
-</LinearLayout>
+</RelativeLayout>

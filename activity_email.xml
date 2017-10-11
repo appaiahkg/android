@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.akg.com.instabroadcast.EmailActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="Bulk Email"
+        android:textSize="20sp"
+        android:background="#50A6C2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:textColor="#0f4d86"
+        android:gravity="center"
+        android:text="Click Settings for Sender Email Configuration:"
+        android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:id="@+id/emailSettings"
+            android:background="@drawable/ic_settings"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:textColor="#0f4d86"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:text="Upload the .txt file with each email ids in a seperate line" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD"
+        android:background="#50A6C2"
+        android:id="@+id/sendEmail"
+        android:layout_marginLeft="5dip"
+        android:textColor="#ffffff"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="#ffffff"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="20dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0f4d86"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dip"
+                android:textStyle="bold"
+                android:text="Subject:" />
+            <EditText
+                android:id="@+id/txtSubject"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#D3D3D3"
+
+                android:layout_marginTop="2dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0f4d86"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dip"
+                    android:textStyle="bold"
+                    android:text="Compose the Email:" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:text="Attachment"
+                    android:background="#50A6C2"
+                    android:id="@+id/attachment"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/bodyEmail"
+                android:background="#D3D3D3"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+            android:layout_width="match_parent"
+                android:minLines="7"
+            android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+            />
+        </LinearLayout>
+
+
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:background="#3CB371"
+        android:id="@+id/broadcastEmail"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>

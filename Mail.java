@@ -1,11 +1,10 @@
-package net.akg.com.instabroadcast;
+package  net.akg.com.deviceunlockdetection;
 
 
 import android.util.Log;
 
 import java.util.Date;
 import java.util.Properties;
-
 import javax.activation.CommandMap;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;

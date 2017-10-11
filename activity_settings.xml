@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    android:background="#0f4d86"
+    android:background="#00868B"
     tools:context="net.akg.com.ats.SettingsActivity">
 
     <TextView
@@ -20,16 +20,19 @@
         android:layout_height="40dip" />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="40dip"
-        android:textColor="#ffffff"
-        android:layout_marginLeft="5dip"
-        android:layout_marginTop="30dip"
-        android:textStyle="bold"
-        android:text="Enter your GMAIL Credentials:" />
-
-<!--    <ScrollView
+        android:layout_height="wrap_content"
+        android:text="The user is notified with the alert mails from mobileappcommunication@gmail.com during device unlock attempt"
+        android:textColor="#000000"
+        android:background="#ffffff"/>
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="200dip">-->
+        android:layout_height="wrap_content"
+        android:text="You could use your own alert provider by using your alternate gmail id and doing the configuration settings as given below"
+        android:textColor="#000000"
+        android:background="#ffffff"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dip">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,7 +83,6 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dip"
                 android:text="After saving the credentials.Log in to your gmail id in a seperate browser and enable the following settings -> myaccount to enable communication."
                 android:textColor="#000000"
                 android:background="#ffffff"/>
@@ -90,13 +92,90 @@
                 android:id="@+id/btnVideo"
                 android:text="Gmail Configuration Settings Video Description"/>
 
+
+            <!-- <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="@string/comm"
+                 android:textColor="#000000"
+
+                 android:background="#ffffff"/>-->
+
+            <!--
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnVideo"
+                            android:text="Click to see Explanation Video For Settings Configuration in Gmail"
+                            android:layout_marginBottom="20dip"
+                            />
+            -->
+
+
+
+
         </LinearLayout>
 
 
-<!--    </ScrollView>-->
+    </ScrollView>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dip"
+        android:gravity="bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of Unlock Attempts Configuration:-"
+            android:textColor="#000000"
+            android:background="#ffffff"/>
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="#ffffff"
+            android:weightSum="1"
+            android:id="@+id/radioGroup">
 
-
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Failed Attempt"
+                android:id="@+id/radioButton"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="0.13"
+                android:checked="true"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Failed Attempts"
+                android:id="@+id/radioButton2"
+                android:layout_marginLeft="20dip"
+                android:checked="false"
+                android:layout_weight="0.13" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Failed Attempts"
+                android:id="@+id/radioButton3"
+                android:layout_marginLeft="20dip"
+                android:checked="false"
+                android:layout_weight="0.13" />
+        </RadioGroup>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adSettingsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dip"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_about_footer">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
 
 </LinearLayout>
 

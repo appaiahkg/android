@@ -1,4 +1,4 @@
-package net.akg.com.instabroadcast;
+package net.akg.com.deviceunlockdetection;
 
 import android.app.Activity;
 import android.graphics.Color;

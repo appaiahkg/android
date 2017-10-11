@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00868B"
+    android:orientation="vertical"
+    tools:context="net.akg.com.deviceunlockdetection.PrivacyActivity">
+
+    <TextView
+        android:text="Privacy Policy"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dip"
+        android:layout_marginBottom="5dip"
+        android:layout_height="40dip" />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/privacyContainer">
+
+    </WebView>
+
+</LinearLayout>

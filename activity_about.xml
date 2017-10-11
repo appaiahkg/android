@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#00868B"
+    tools:context="net.akg.com.ats.AboutActivity">
+
+    <TextView
+        android:text="About"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dip"
+        android:layout_marginBottom="5dip"
+        android:layout_height="40dip" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/config"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+          <!--  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of Unlock Attempts Configuration:-"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:weightSum="1"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Failed Attempt"
+                    android:id="@+id/radioButton"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="0.13"
+                    android:checked="true"
+                     />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Failed Attempts"
+                    android:id="@+id/radioButton2"
+                    android:layout_marginLeft="20dip"
+                    android:checked="false"
+                    android:layout_weight="0.13" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Failed Attempts"
+                    android:id="@+id/radioButton3"
+                    android:layout_marginLeft="20dip"
+                    android:checked="false"
+                    android:layout_weight="0.13" />
+            </RadioGroup>-->
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/comm"
+                android:textColor="#000000"
+
+                android:background="#ffffff"/>-->
+
+<!--
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnVideo"
+                android:text="Click to see Explanation Video For Settings Configuration in Gmail"
+                android:layout_marginBottom="20dip"
+                />
+-->
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dip"
+        android:gravity="bottom">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adAboutView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dip"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_about_footer">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+</LinearLayout>

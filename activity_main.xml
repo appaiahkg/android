@@ -1,92 +1,64 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#00868B"
+
     tools:context=".MainActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dip"
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
         android:textColor="#ffffff"
-        android:gravity="center"
-        android:text="Insta Broadcast"
-        android:textSize="20sp"
-        android:background="#0f4d86"/>
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginBottom="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Please  Enter Your Email ID"/>
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_marginLeft="10dip"
+        android:background="#ffffff"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="2dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:text="ACTIVATE"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:background="#39B7CD"
-            android:layout_margin="5dip"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <TextView android:text="@string/txtSms"
-                android:id="@+id/txtSms"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#ffffff"
-                android:textSize="40sp"
-                android:gravity="center"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:background="#50A6C2"
-            android:layout_margin="5dip"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <TextView android:text="@string/txtEmail"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#ffffff"
-                android:id="@+id/txtEmail"
-                android:textSize="40sp"
-                android:gravity="center"/>
-        </LinearLayout>
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+
+        android:layout_marginTop="20dip"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_home_footer">
+        </com.google.android.gms.ads.AdView>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:background="#009ACD"
-            android:layout_margin="5dip"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <TextView android:text="@string/txtOnlineSms"
-                android:id="@+id/txtOnlineSms"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="40sp"
-                android:textColor="#ffffff"
-                android:gravity="center"/>
-        </LinearLayout>
-       <!-- <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <TextView android:text="@string/txtEmail"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="40sp"
-                android:gravity="center"/>
-        </LinearLayout>-->
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:orientation="horizontal">
-        </LinearLayout>
+
 
 
 </LinearLayout>
